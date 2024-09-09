@@ -45,5 +45,24 @@ userInput.addEventListener("input", () => {
     }
 
     // Update feedback with highlighted text
-    feedback.innerHTML = result;
+    userInput.addEventListener("input", () => {
+        const input = userInput.value;
+
+        // Check if the user has typed the entire sentence
+        if (input.length === sentence.length) {
+            let result = '';
+
+            // Compare user input with sentence
+            for (let i = 0; i < sentence.length; i++) {
+                if (input[i] === sentence[i]) {
+                    result += `<span class="correct">${sentence[i]}</span>`;
+                } else {
+                    result += `<span class="incorrect">${sentence[i]}</span>`;
+                }
+            }
+
+            // Display feedback only when typing is complete
+            feedback.innerHTML = result;
+        }
+    });
 });
