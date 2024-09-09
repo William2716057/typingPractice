@@ -28,10 +28,13 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="english.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="script.js">
+    <Content Include="morse.js">
       <SubType>Code</SubType>
     </Content>
     <Content Include="server.js" />
