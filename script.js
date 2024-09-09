@@ -3,8 +3,12 @@ const displaySentence = document.getElementById("displaySentence");
 const userInput = document.getElementById("userInput");
 const feedback = document.getElementById("feedback");
 
+
 // Display the sentence
 displaySentence.innerText = sentence;
+
+//function to translate sentence to morse code and store as translation
+//display morse version (typed input should match original const sentence
 
 // Function to highlight mistakes
 userInput.addEventListener("input", () => {
