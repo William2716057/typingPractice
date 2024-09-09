@@ -28,6 +28,9 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Content Include="english.html">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="english.js">
       <SubType>Code</SubType>
     </Content>
